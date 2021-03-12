@@ -36,6 +36,8 @@ def detect(save_img=False):
     if half:
         model.half()  # to FP16
 
+    modelc = None
+
     # Second-stage classifier
     classify = False
     if classify:
